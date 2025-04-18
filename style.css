@@ -12,6 +12,17 @@ body {
     justify-content: center;
     align-items: center;
 }
+#background-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1; /* Ensure the video is behind other content */
+    object-fit: cover; /* Ensures the video covers the entire area */
+}
+
+
 
 .container {
     background: rgba(255, 255, 255, 0.1);
@@ -21,6 +32,8 @@ body {
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
     width: 90%;
     max-width: 400px;
+    position: relative; /* Ensure content is positioned over the video */
+    z-index: 1;
 }
 
 .search-box {
@@ -111,4 +124,41 @@ body {
 
 .stat span {
     font-size: 1.1rem;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #333;
+    color: white;
+}
+
+.logo img {
+    height: 50px; /* Adjust the size of the logo */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #00b4d8; /* Change color on hover */
+}
+
+.profile img {
+    height: 40px; /* Adjust the size of the profile image */
+    width: 40px;
+    border-radius: 50%; /* Make the image circular */
+    border: 2px solid white; /* Optional border */
 } 

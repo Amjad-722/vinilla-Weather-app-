@@ -8,7 +8,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <div class="container">
+    <video autoplay muted loop id="background-video">
+        <source src="path/to/your/video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="container" >
         <div class="search-box">
             <input type="text" placeholder="Enter city name" class="search-input">
             <button class="search-button">
@@ -19,7 +23,7 @@
             <div class="weather-info">
                 <h1 class="city">Weather App</h1>
                 <div class="weather-details">
-                    <img src="" alt="weather icon" class="weather-icon">
+                    <img src="https://cdn.pixabay.com/photo/2016/02/19/11/53/earth-1209640_960_720.jpg" alt="weather icon" class="weather-icon">
                     <h2 class="temperature">--°C</h2>
                     <p class="description">Enter a city name</p>
                 </div>
@@ -27,6 +31,14 @@
                     <div class="stat">
                         <i class="fas fa-wind"></i>
                         <span class="wind">-- km/h</span>
+                    </div>
+                    <div class="stat">
+                        <i class="fas fa-tint"></i>
+                        <span class="humidity">--%</span>
+                    </div>
+                    <div class="stat">
+                        <i class="fas fa-tint"></i>
+                        <span class="humidity">--%</span>
                     </div>
                     <div class="stat">
                         <i class="fas fa-tint"></i>
